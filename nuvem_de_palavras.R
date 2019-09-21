@@ -64,7 +64,8 @@ texto = texto %>%
   removeWords(c("outro", "outra", "outros", "outras"))
 
 texto
-ong("nuvem.png", height = 10, width = 10,
+# Salva a nuvem num arquivo png
+png("nuvem.png", height = 10, width = 10,
     units = "in", res = 100)
 wordcloud(texto)
 dev.off()
